@@ -1,5 +1,7 @@
 package com.dev.springboot.model;
 
+import javax.validation.constraints.NotBlank;
+
 import lombok.Data;
 
 /*
@@ -8,8 +10,11 @@ import lombok.Data;
 @Data
 public class Supervisor {
     
+    @NotBlank(message = "not blank jurisdiction")
     private String jurisdiction;
+    @NotBlank(message = "not blank firstName")
     private String firstName;
+    @NotBlank(message = "not blank lastName")
     private String lastName;   
 
     /*
