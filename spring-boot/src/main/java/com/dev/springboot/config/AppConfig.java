@@ -13,5 +13,4 @@ public class AppConfig {
         // Do any additional configuration here
         return builder.build();
     }
-    
 }
